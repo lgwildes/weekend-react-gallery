@@ -26,16 +26,28 @@ function App() {
     })
   }
 
+  const likeClick = (id) => {
+    console.log('like was clicked');
+    axios.put(`/gallery/like/${id}`)
+      .then(response => {
+        console.log('like click PUT', response);
+        getGallery();
+      })
+      .catch(err => {
+        console.log('like click PUT error', err);
+      })
+  }
+
 
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Gallery of My Life</h1>
+          <h1 className="App-title">🦕 🦟 🏝️ Jurassic Gallery 🌋 🐐 🦖</h1>
         </header>
-        <p>Gallery goes here</p>
-          <div>
+          <div className="galleryContainer">
             <GalleryList
-              images={gallery} />
+              images={gallery}
+              likeClick={likeClick} />
           </div>
       </div>
     );

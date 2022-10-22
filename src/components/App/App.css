@@ -1,15 +1,25 @@
+
+
 .App {
   text-align: center;
 }
 
 .App-header {
-  background-color: #222;
+  background-color: orange;
   padding: 1em;
   color: white;
   margin-bottom: 1em;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 
 .App-title {
-  font-size: 1.5em;
+  font-size: 4em;
 }
 
+.galleryContainer {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  background-color: white;
+}
