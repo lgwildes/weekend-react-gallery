@@ -30,12 +30,12 @@ function GalleryItem( {image, likeClick} ) {
             
             
             <li  key={image.id} className="itemLi">
-                    <div className="galleryItem">
+                    <div className="galleryItem" onClick={imageClick}>
                         {clicked === false &&
-                        <img src={image.path} onClick={imageClick}/>
+                        <img src={image.path} />
                         }
                         {clicked === true &&
-                        <p onClick={imageClick}>{image.description}</p>}
+                        <p >{image.description}</p>}
                         
                     </div>
                     <div className="galleryStats">
