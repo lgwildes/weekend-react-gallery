@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Jurassic Park';
+    src: url('../App/JurassicPark.woff2') format('woff2'),
+        url('../App/JurassicPark.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
 
 .itemLi {
     list-style: none;
@@ -34,8 +42,9 @@ button {
     color: white;
     border: none;
     box-shadow: 1px 1px 1px 1px orange;
-    font-family: monospace;
-    font-weight: bold;
+    font-family: 'Jurassic Park';
+    font-size: larger;
+    letter-spacing: 1.5px;
     height: 25px;
 }
 

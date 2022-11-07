@@ -1,4 +1,11 @@
-
+@font-face {
+  font-family: 'Jurassic Park';
+  src: url('../App/JurassicPark.woff2') format('woff2'),
+      url('../App/JurassicPark.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 .App {
   text-align: center;
@@ -7,13 +14,18 @@
 .App-header {
   background-color: orange;
   padding: .5em;
-  color: white;
+  color: black;
   margin-bottom: 1em;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+ 
+
+  
+
 }
 
 .App-title {
-  font-size: 4em;
+  font-family: 'Jurassic Park';
+  font-size: 72px;
+  letter-spacing: 4px;
 }
 
 .galleryContainer {
@@ -23,3 +35,5 @@
   justify-items: center;
   background-color: white;
 }
+
+
